@@ -2,6 +2,7 @@ import pandas as pd
 import sqlite3
 import numpy as np
 import sys
+import os
 
 # ============================================
 # ПУТЬ К БАЗЕ ДАННЫХ (из командной строки или по умолчанию)
