@@ -2,7 +2,7 @@
 
 **Прогнозирование операционного денежного потока компании на основе аналитики клиентских данных**
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.9--3.11-blue)
 ![XGBoost](https://img.shields.io/badge/XGBoost-2.1.4-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-red)
 ![ARIMA](https://img.shields.io/badge/ARIMA-statsmodels-yellowgreen)
