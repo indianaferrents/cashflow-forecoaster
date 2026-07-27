@@ -141,6 +141,7 @@ uploaded_file = st.sidebar.file_uploader(
 )
 
 if uploaded_file:
+    os.makedirs('data', exist_ok=True)
     with open("data/uploaded.db", "wb") as f:
         f.write(uploaded_file.getbuffer())
     st.sidebar.success("✅ БД загружена!")
