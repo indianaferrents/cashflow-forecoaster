@@ -27,7 +27,7 @@ if len(sys.argv) > 4:
 np.random.seed(42)
 
 # Подключение к БД
-conn = sqlite3.connect('test_data/test_db.db')
+conn = sqlite3.connect('test_db.db')
 
 # 1. Клиенты
 reg_dates = pd.date_range(start=start_date, end=end_date, freq='D')
@@ -81,7 +81,7 @@ cashflow.to_sql('cashflow', conn, if_exists='replace', index=False)
 
 conn.close()
 
-print("[OK] Тестовая БД создана: test_data/test_db.db")
+print("[OK] Тестовая БД создана в корневой папке: test_db.db")
 print(f"   Клиентов: {len(customers)}")
 print(f"   Транзакций: {len(transactions)}")
 print(f"   Денежный поток: {len(cashflow)} записей")
