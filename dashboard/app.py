@@ -642,7 +642,7 @@ if os.path.exists('data/processed/features.csv') and os.path.exists('reports/xgb
                         ax_best.plot(best_df['actual'], label='Факт', marker='o', linestyle='-')
                         ax_best.plot(best_df['predicted'], label=f'Прогноз ({model_label})', marker='x', linestyle='--')
                         ax_best.legend()
-                        ax_best.set_title(f'Прогноз vs Факт ({model_label})')
+                        ax_best.set_title(f'Прогноз и Факт ({model_label})')
                         ax_best.set_xlabel('Период (индекс)')
                         ax_best.set_ylabel('Денежный поток')
                         ax_best.grid(True, alpha=0.3)
