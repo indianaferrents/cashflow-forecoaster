@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import sys
+import os
 
 # ============================================
 # ПАРАМЕТРЫ ПО УМОЛЧАНИЮ
@@ -27,7 +28,9 @@ if len(sys.argv) > 4:
 np.random.seed(42)
 
 # Подключение к БД
-conn = sqlite3.connect('test_db.db')
+desktop = os.path.join(os.path.expanduser('~'), 'Desktop')
+db_path = os.path.join(desktop, 'test_db.db')
+conn = sqlite3.connect(db_path)
 
 # 1. Клиенты
 reg_dates = pd.date_range(start=start_date, end=end_date, freq='D')
@@ -81,7 +84,7 @@ cashflow.to_sql('cashflow', conn, if_exists='replace', index=False)
 
 conn.close()
 
-print("[OK] Тестовая БД создана в корневой папке: test_db.db")
+print(f"[OK] Тестовая БД создана: {db_path}")
 print(f"   Клиентов: {len(customers)}")
 print(f"   Транзакций: {len(transactions)}")
 print(f"   Денежный поток: {len(cashflow)} записей")
