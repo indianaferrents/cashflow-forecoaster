@@ -75,24 +75,24 @@
 
 ## Способ 2. Ручной запуск
 
-# 1. Создание виртуального окружения
+1. Создание виртуального окружения
 ```bash
 python -m venv venv
 ```
-# 2. Активация
-# Windows:
+2. Активация
+- Windows:
 ```bash
 venv\Scripts\activate
 ```
-# macOS/Linux:
+- macOS/Linux:
 ```bash
 source venv/bin/activate
 ```
-# 3. Установка зависимостей
+3. Установка зависимостей
 ```bash
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ```
-# 4. Запуск приложения
+4. Запуск приложения
 ```bash
 streamlit run dashboard/app.py
 ```
@@ -107,7 +107,7 @@ streamlit run dashboard/app.py
 
 2. Введите параметры или нажмите Enter для значений по умолчанию.
 
-3. Тестовая БД появится в корневой папке.
+3. Тестовая БД появится на рабочем столе.
 
 4. После создания БД загрузите её в интерфейсе (раздел «Загрузка своей БД»).
 
@@ -306,6 +306,8 @@ TensorFlow поддерживает Python 3.9–3.11. Если у вас Python
 Причина: отсутствует Microsoft Visual C++ Redistributable.
 
 - Решение: установите VC++ Redistributable и перезапустите приложение.
+
+Если есть другие ошибки или решения не помогают пишите на почту автору.
 
 ## 🔧 Для разработчиков
 
