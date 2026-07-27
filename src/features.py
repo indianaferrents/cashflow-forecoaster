@@ -6,6 +6,7 @@ import sys
 # ============================================
 # ПУТЬ К БАЗЕ ДАННЫХ (из командной строки или по умолчанию)
 # ============================================
+os.makedirs('data/processed', exist_ok=True)
 db_path = 'data/cashflow.db'
 if len(sys.argv) > 1:
     db_path = sys.argv[1]
