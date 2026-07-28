@@ -12,7 +12,7 @@
 
 ---
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](dashboard/screenshot.png)
 
 ---
 
